@@ -27,6 +27,7 @@ layout: default
 				{% endif %}
 				<div class="content">
 					{{ content }}
+					{% include share-bar.html %}
 				</div>
 				{% if site.disqus-identifier %}
 				{% include disqus-comments.html %}

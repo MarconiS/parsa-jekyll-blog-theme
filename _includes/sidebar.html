@@ -6,6 +6,16 @@
         placeholder="Search">
     </form>
   </div>
+  <div style="text-align:center" class="widget">
+      <img src="{{site.baseurl}}/assets/images/hgrd2.png" width="200" height="200" alt="HG">
+    <p> </p>
+    <h6>Hilary Garcia RD</h6>
+    <ul class="list-inline d-inline-block">
+      {% for social in site.social %}
+      <li class="list-inline-item"><a href="{{ social.link }}" class="text-dark"><i class="{{ social.icon }}"></i></a></li>
+      {% endfor %}
+    </ul>
+  </div>
   <div class="widget">
     <h6 class="mb-4">LATEST POST</h6>
     {% for post in site.posts limit:3 %}
